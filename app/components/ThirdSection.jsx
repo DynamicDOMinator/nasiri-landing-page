@@ -4,11 +4,11 @@ export default function ThirdSection() {
   return (
     <div className="py-10">
       <div className="flex items-center justify-center gap-4">
-        <div className="h-[2px] md:w-60 w-32 bg-[rgba(255,102,36,0.3)]"></div>
+        <div className="h-[2px] md:w-60 w-20 bg-[rgba(255,102,36,0.3)]"></div>
         <h3 className="text-center md:text-4xl text-2xl font-bold">
           مجالات عملنا
         </h3>
-        <div className="h-[2px] md:w-60 w-32 bg-[rgba(255,102,36,0.3)]"></div>
+        <div className="h-[2px] md:w-60 w-20 bg-[rgba(255,102,36,0.3)]"></div>
       </div>
 
       <div className="grid md:grid-rows-2 gap-y-8 pt-10 px-20">
