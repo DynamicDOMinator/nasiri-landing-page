@@ -2,10 +2,10 @@ import Image from "next/image";
 import AskLawyerBtn from "./AskLawyerBtn";
 export default function ThirdSection() {
   return (
-    <div className="py-10 md:py-0">
-      <div className="flex items-center justify-center gap-4">
+    <div className="py-10   md:pt-10">
+      <div className="flex items-center justify-center gap-4 mt-10 ">
         <div className="h-[2px] md:w-60 w-20 bg-blue-600"></div>
-        <h3 className="text-center md:text-4xl text-2xl font-bold text-blue-900">
+        <h3 className="text-center md:text-4xl  text-2xl font-bold text-blue-900">
           مجالات عملنا
         </h3>
         <div className="h-[2px] md:w-60 w-20 bg-blue-600"></div>
@@ -17,7 +17,7 @@ export default function ThirdSection() {
             <div className="border-l-2 border-blue-600 pl-2 ">
                 <Image
               className="w-[100px] h-[70px] mx-auto md:mx-0"
-              src="/icon1.png"
+              src="/icon1.png"  
               alt="lawyer"
               width={500}
               height={500}
@@ -177,7 +177,7 @@ export default function ThirdSection() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-20">
         <AskLawyerBtn />
       </div>
     </div>

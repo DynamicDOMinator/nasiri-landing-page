@@ -13,7 +13,7 @@ export default function SecondSection() {
 
       <div
         dir="rtl"
-        className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-0 place-items-center max-w-5xl mx-auto pt-20 " data-aos="fade-left"
+        className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-0 place-items-center max-w-5xl pb-8 mx-auto pt-20 " data-aos="fade-left"
       >
         <div className="bg-gradient-to-t from-gray-300 to-white w-[325px]  h-[650px] shadow-2xl   rounded-lg flex flex-col justify-between">
           <div className="px-4 pt-4">

@@ -33,12 +33,17 @@ export default function ReviewsSection() {
   ];
 
   return (
-    <section className="pb-6 mt-12 px-4 max-w-6xl mx-auto" dir="rtl">
+    <section className="pb-6 mt-4 px-4 max-w-6xl mx-auto" dir="rtl">
       <div className="pb-16">
-      <h4 className="text-center md:text-4xl text-2xl font-bold text-blue-900 ">
+        <div className="flex items-center justify-center gap-4 pt-10">
+        <div className="h-[2px] md:w-60 w-20 bg-blue-600"></div>
+          <h4 className="text-center md:text-4xl text-2xl font-bold text-blue-900 ">
        
-      من آراء عملاؤنا
+      آراء عملاؤنا
       </h4>
+      <div className="h-[2px] md:w-60 w-20 bg-blue-600"></div>
+        </div>
+      
       <p className="text-center  md:text-xl pt-5 text-lg text-blue-900">أكثر من ٥٠٠٠ تعليق إيجابي يعكس مدى سهولة الاستخدام والموثوقية العالية داخل المنصة</p>
       </div>
      
@@ -54,7 +59,7 @@ export default function ReviewsSection() {
            </div>
             <p className=" text-blue-600">{review.text}</p>
             <div className="pt-10 flex items-center justify-between flex-row-reverse">
-            <Image className="border-4 border-orange-500 rounded-full" src={review.avatar} alt={review.name} width={70} height={70}/>
+            <Image className="border-2 border-orange-500 rounded-full" src={review.avatar} alt={review.name} width={70} height={70}/>
             <p className="text-blue-600 font-bold">{review.name}</p>
             </div>
           </div>

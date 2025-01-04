@@ -15,7 +15,7 @@ function Footer() {
         </div>
 
         {/* Footer bottom section */}
-        <div className="border-t border-white/20 mt-8    lg:w-10/12 mx-auto w-full">
+        <div className="border-t border-white/20 mt-8 lg:w-10/12 mx-auto w-full">
           <div className="flex flex-col md:flex-row justify-center items-center gap-4">
             <div className="flex items-center gap-4 pt-4 text-white text-sm">
               <a href="#" className="hover:text-gray-300">

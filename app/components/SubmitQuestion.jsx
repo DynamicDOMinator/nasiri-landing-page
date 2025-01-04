@@ -38,6 +38,8 @@ export default function SubmitQuestion() {
     if (!formData.city) newErrors.city = "المدينة مطلوبة";
     if (!formData.appointmentTime)
       newErrors.appointmentTime = "وقت التعيين مطلوب";
+    if (!formData.agreeToTerms)
+      newErrors.agreeToTerms = "يجب الموافقة على الشروط والأحكام";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -181,18 +183,24 @@ export default function SubmitQuestion() {
         </div>
       )}
 
-      <div dir="rtl" className="flex items-center gap-2">
-        <input
-          type="checkbox"
-          name="agreeToTerms"
-          checked={formData.agreeToTerms}
-          onChange={handleChange}
-          className="w-4 h-4"
-          required
-        />
-        <label className="text-sm text-gray-600">
-          أوافق على شروط الاستخدام والخصوصية
-        </label>
+      <div dir="rtl">
+        <div className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            name="agreeToTerms"
+            checked={formData.agreeToTerms}
+            onChange={handleChange}
+            className="w-4 h-4"
+          />
+          <label className="text-sm text-gray-600">
+            أوافق على شروط الاستخدام والخصوصية
+          </label>
+        </div>
+        {errors.agreeToTerms && (
+          <span className="text-red-500 text-sm block mt-1">
+            {errors.agreeToTerms}
+          </span>
+        )}
       </div>
 
       <button
