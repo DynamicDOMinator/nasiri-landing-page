@@ -85,8 +85,10 @@ export default function SecondSection() {
           />
         </div>
       </div>
+<div className=" md:pt-7">
 
       <AskLawyerBtn />
+</div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 import AskLawyerBtn from "./AskLawyerBtn";
 export default function ThirdSection() {
   return (
-    <div className="py-10">
+    <div className="py-10 md:py-20">
       <div className="flex items-center justify-center gap-4">
         <div className="h-[2px] md:w-60 w-20 bg-[rgba(255,102,36,0.3)]"></div>
         <h3 className="text-center md:text-4xl text-2xl font-bold">

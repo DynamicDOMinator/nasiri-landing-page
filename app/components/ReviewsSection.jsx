@@ -3,28 +3,28 @@ import AskLawyerBtn from "./AskLawyerBtn";
 export default function ReviewsSection() {
   const reviews = [
     {
-      name: "Sarah Miller",
+      name: "أحمد",
       username: "sarah_m",
       text: "خدمة احترافية واستجابة سريعة. أنقذوني في قضية معقدة وتم حلها بشكل مثالي. أوصي بهم بشدة!",
       image: "/stars.png",
       avatar: "/review.png",
     },
     {
-      name: "James Wilson",
+      name: "محمود",
       username: "james_w",
       text: "خدمة احترافية واستجابة سريعة. أنقذوني في قضية معقدة وتم حلها بشكل مثالي. أوصي بهم بشدة!",
       image: "/stars.png",
       avatar: "/review.png",
     },
     {
-      name: "Emma Davis",
+      name: "محمد",
       username: "emma_d",
       text: "خدمة احترافية واستجابة سريعة. أنقذوني في قضية معقدة وتم حلها بشكل مثالي. أوصي بهم بشدة!",
       image: "/stars.png",
       avatar: "/review.png",
     },
     {
-      name: "Michael Brown",
+      name: "خالد",
       username: "michael_b",
       text: "خدمة احترافية واستجابة سريعة. أنقذوني في قضية معقدة وتم حلها بشكل مثالي. أوصي بهم بشدة!",
       image: "/stars.png",
@@ -34,6 +34,14 @@ export default function ReviewsSection() {
 
   return (
     <section className="py-12 px-4 max-w-6xl mx-auto" dir="rtl">
+      <div className="pb-16">
+      <h4 className="text-center md:text-4xl text-2xl font-bold text-blue-900 ">
+       
+      من آراء عملاؤنا
+      </h4>
+      <p className="text-center  md:text-xl pt-5 text-lg text-blue-900">أكثر من ٥٠٠٠ تعليق إيجابي يعكس مدى سهولة الاستخدام والموثوقية العالية داخل المنصة</p>
+      </div>
+     
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8"data-aos="fade-up">
         {reviews.map((review, index) => (
           <div
@@ -45,13 +53,14 @@ export default function ReviewsSection() {
 
            </div>
             <p className=" text-blue-950">{review.text}</p>
-            <div className="pt-10">
-            <Image className="mr-auto border-4 border-zinc-900 rounded-full" src={review.avatar} alt={review.name} width={70} height={70}/>
+            <div className="pt-10 flex items-center justify-between flex-row-reverse">
+            <Image className="border-4 border-zinc-900 rounded-full" src={review.avatar} alt={review.name} width={70} height={70}/>
+            <p className="text-blue-950 font-bold">{review.name}</p>
             </div>
           </div>
         ))}
       </div>
-      <div className="text-center">
+      <div className="text-center md:py-3">
         <AskLawyerBtn />
       </div>
     </section>
