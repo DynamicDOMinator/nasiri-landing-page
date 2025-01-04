@@ -54,7 +54,7 @@ export default function ReviewsSection() {
            </div>
             <p className=" text-blue-950">{review.text}</p>
             <div className="pt-10 flex items-center justify-between flex-row-reverse">
-            <Image className="border-4 border-zinc-900 rounded-full" src={review.avatar} alt={review.name} width={70} height={70}/>
+            <Image className="border-4 border-blue-600 rounded-full" src={review.avatar} alt={review.name} width={70} height={70}/>
             <p className="text-blue-950 font-bold">{review.name}</p>
             </div>
           </div>

@@ -5,8 +5,8 @@ export default function SecondSection() {
   return (
     <div className="py-10 overflow-hidden">
       <div>
-        <h3 className="text-center md:text-4xl text-2xl font-bold">طريقتنا</h3>
-        <p className="text-center md:text-xl text-sm pt-2">
+        <h3 className="text-center md:text-4xl text-2xl font-bold text-blue-900">طريقتنا</h3>
+        <p className="text-center md:text-xl text-sm pt-2 text-blue-900">
           نلتزم بتقديم حلول قانونية مبتكرة وفعالة تحمي حقوقك وتحقق أهدافك
         </p>
       </div>
@@ -23,8 +23,8 @@ export default function SecondSection() {
             <p className="mx-auto  pb-1 w-fit font-semibold text-2xl pt-3">
               ادخل طلبك
             </p>
-            <div className="w-8 h-[2px] mt-3 bg-orange-500 mx-auto"></div>
-            <p className="text-center  text-gray-800 pt-10">
+            <div className="w-8 h-[2px] mt-11 bg-orange-500 mx-auto"></div>
+            <p className="text-center  text-gray-800 pt-4">
               هدفنا في نصيري هو ان نسهل عليك عملية البحث علي مزودي الخدمات اجب
               علي بعض الاسئلة وقم بإدخال معلومات الاتصال بك نصيري يضمن الحفاظ
               علي سرية معلوماتك
@@ -47,7 +47,7 @@ export default function SecondSection() {
             <p className="mx-auto text-center  px-8 pb-1 w-fit font-semibold text-2xl pt-3">
               تلقي عدة عروض الاسعار وقارنها
             </p>
-            <div className="w-8 h-[2px] mt-3 bg-orange-500 mx-auto"></div>
+            <div className="w-8 h-[2px] my-3 bg-orange-500 mx-auto"></div>
             <p className="text-center text-lg text-gray-800 pt-1">
               عندما نتلقي طلبك نقوم بإرسال لمزودي الخدمة القريبين منك.مزودي
               الخدمة المتاحين والمهتمين سوف يرسلون عرض اسعار خاص لطلبك
@@ -70,7 +70,7 @@ export default function SecondSection() {
             <p className="mx-auto text-center px-8 pb-1 w-fit font-semibold text-2xl pt-3">
               اكتب تعليق عن تجربتك ما بعد الخدمة
             </p>
-            <div className="w-8 h-[2px] mt-3 bg-orange-500 mx-auto"></div>
+            <div className="w-8 h-[2px] my-3 bg-orange-500 mx-auto"></div>
             <p className="text-center text-lg text-gray-800 pt-1">
               عندما تتلقي عرض اسعار من مزود الخدمة راجع التقيمات مع العملاء
               السابقين وتفاوض علي السعر لا تنسي كتابة تعليقك الخاص ما بعد الخدمة

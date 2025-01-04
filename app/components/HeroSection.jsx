@@ -13,7 +13,7 @@ export default function HeroSection() {
   }, []);
   return (
     <div
-      className="relative bg-cover bg-center h-fit w-full md:py-20 py-10"
+      className="relative bg-cover bg-center h-fit w-full md:py-20 md:mt-10 mt-16 py-10"
       style={{ backgroundImage: "url('/HeroSection.png')" }}
     >
       {/* Dark overlay */}

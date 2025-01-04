@@ -2,19 +2,19 @@ import Image from "next/image";
 import AskLawyerBtn from "./AskLawyerBtn";
 export default function ThirdSection() {
   return (
-    <div className="py-10 md:py-20">
+    <div className="py-10 md:py-14">
       <div className="flex items-center justify-center gap-4">
-        <div className="h-[2px] md:w-60 w-20 bg-[rgba(255,102,36,0.3)]"></div>
-        <h3 className="text-center md:text-4xl text-2xl font-bold">
+        <div className="h-[2px] md:w-60 w-20 bg-blue-600"></div>
+        <h3 className="text-center md:text-4xl text-2xl font-bold text-blue-900">
           مجالات عملنا
         </h3>
-        <div className="h-[2px] md:w-60 w-20 bg-[rgba(255,102,36,0.3)]"></div>
+        <div className="h-[2px] md:w-60 w-20 bg-blue-600"></div>
       </div>
 
       <div className="grid md:grid-rows-2 gap-20 lg:max-w-7xl mx-auto pt-10 md:pt-20 px-10 md:px-0 " data-aos="fade-up">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-20 md:px-10 lg:px-0" dir="rtl">
           <div className="flex items-start gap-4 ">
-            <div className="border-l-2 border-orange-500 pl-2 ">
+            <div className="border-l-2 border-blue-600 pl-2 ">
                 <Image
               className="w-[100px] h-[70px] mx-auto md:mx-0"
               src="/icon1.png"
@@ -35,7 +35,7 @@ export default function ThirdSection() {
 
 
           <div className="flex items-start gap-4">
-            <div className="border-l-2 border-orange-500 pl-2 ">
+            <div className="border-l-2 border-blue-600 pl-2 ">
                 <Image
               className="w-[100px] h-[70px] mx-auto md:mx-0"
               src="/icon2.png"
@@ -55,7 +55,7 @@ export default function ThirdSection() {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="border-l-2 border-orange-500 pl-2 ">
+            <div className="border-l-2 border-blue-600 pl-2 ">
                 <Image
               className="w-[100px] h-[70px] mx-auto md:mx-0"
               src="/icon3.png"
@@ -74,7 +74,7 @@ export default function ThirdSection() {
            
           </div>
           <div className="flex items-start gap-4">
-            <div className="border-l-2 border-orange-500 pl-2 ">
+            <div className="border-l-2 border-blue-600 pl-2 ">
                 <Image
               className="w-[100px] h-[70px] mx-auto md:mx-0"
               src="/icon4.png"
@@ -96,7 +96,7 @@ export default function ThirdSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-20 md:px-10 lg:px-0" dir="rtl">
         <div className="flex items-start gap-4">
-            <div className="border-l-2 border-orange-500 pl-2 ">
+            <div className="border-l-2 border-blue-600 pl-2 ">
                 <Image
               className="w-[100px] h-[70px] mx-auto md:mx-0"
               src="/icon5.png"
@@ -116,7 +116,7 @@ export default function ThirdSection() {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="border-l-2 border-orange-500 pl-2 ">
+            <div className="border-l-2 border-blue-600 pl-2 ">
                 <Image
               className="w-[100px] h-[70px] mx-auto md:mx-0"
               src="/icon6.png"
@@ -136,7 +136,7 @@ export default function ThirdSection() {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="border-l-2 border-orange-500 pl-2 ">
+            <div className="border-l-2 border-blue-600 pl-2 ">
                 <Image
               className="w-[100px] h-[70px] mx-auto md:mx-0"
               src="/icon7.png"
@@ -156,7 +156,7 @@ export default function ThirdSection() {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="border-l-2 border-orange-500 pl-2 ">
+            <div className="border-l-2 border-blue-600 pl-2 ">
                 <Image
               className="w-[100px] h-[70px] mx-auto md:mx-0"
               src="/icon8.png"
