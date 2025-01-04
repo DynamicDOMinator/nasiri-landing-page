@@ -82,7 +82,6 @@ export default function SubmitQuestion() {
           value={formData.name}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-        
         />
         {errors.name && (
           <span className="text-red-500 text-sm">{errors.name}</span>
@@ -104,7 +103,6 @@ export default function SubmitQuestion() {
             value={formData.phone}
             onChange={handleChange}
             className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-           
           />
         </div>
         {errors.phone && (
@@ -122,7 +120,6 @@ export default function SubmitQuestion() {
           onChange={handleChange}
           className="w-full px-3 py-2 border resize-none rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           rows="2"
-          
         />
       </div>
 
@@ -135,7 +132,6 @@ export default function SubmitQuestion() {
           value={formData.city}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-        
         >
           <option value="">اختر المدينة</option>
           {saudiCities.map((city) => (
@@ -149,34 +145,37 @@ export default function SubmitQuestion() {
         )}
       </div>
 
-      <div className="relative">
-        <label className="block mb-2 text-sm text-gray-600">
-          متى تريد تعيين محامي
-        </label>
-        <div className="space-y-2">
-          {[
-            { value: "immediately", label: "فوراً" },
-            { value: "30days", label: "خلال 30 يوم" },
-            { value: "notSure", label: "غير متأكد" },
-          ].map((option) => (
-            <div key={option.value} className="flex items-center gap-2">
-              <input
-                type="radio"
-                name="appointmentTime"
-                value={option.value}
-                checked={formData.appointmentTime === option.value}
-                onChange={handleChange}
-                className="w-4 h-4 focus:ring-2 focus:ring-blue-500"
-                
-              />
-              <label className="text-sm text-gray-600">{option.label}</label>
-            </div>
-          ))}
+      {formData.city && (
+        <div className="relative">
+          <label className="block mb-2 text-sm text-gray-600">
+            متى تريد تعيين محامي
+          </label>
+          <div className="space-y-2">
+            {[
+              { value: "immediately", label: "فوراً" },
+              { value: "30days", label: "خلال 30 يوم" },
+              { value: "notSure", label: "غير متأكد" },
+            ].map((option) => (
+              <div key={option.value} className="flex items-center gap-2">
+                <input
+                  type="radio"
+                  name="appointmentTime"
+                  value={option.value}
+                  checked={formData.appointmentTime === option.value}
+                  onChange={handleChange}
+                  className="w-4 h-4 focus:ring-2 focus:ring-blue-500"
+                />
+                <label className="text-sm text-gray-600">{option.label}</label>
+              </div>
+            ))}
+          </div>
+          {errors.appointmentTime && (
+            <span className="text-red-500 text-sm">
+              {errors.appointmentTime}
+            </span>
+          )}
         </div>
-        {errors.appointmentTime && (
-          <span className="text-red-500 text-sm">{errors.appointmentTime}</span>
-        )}
-      </div>
+      )}
 
       <div dir="rtl" className="flex items-center gap-2">
         <input
