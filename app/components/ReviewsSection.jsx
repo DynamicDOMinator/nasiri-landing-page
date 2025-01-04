@@ -33,7 +33,7 @@ export default function ReviewsSection() {
   ];
 
   return (
-    <section className="py-12 px-4 max-w-6xl mx-auto" dir="rtl">
+    <section className="pb-6 mt-12 px-4 max-w-6xl mx-auto" dir="rtl">
       <div className="pb-16">
       <h4 className="text-center md:text-4xl text-2xl font-bold text-blue-900 ">
        
@@ -52,10 +52,10 @@ export default function ReviewsSection() {
            <Image src={review.image} alt={review.name} width={100} height={100}/>
 
            </div>
-            <p className=" text-blue-950">{review.text}</p>
+            <p className=" text-blue-600">{review.text}</p>
             <div className="pt-10 flex items-center justify-between flex-row-reverse">
-            <Image className="border-4 border-blue-600 rounded-full" src={review.avatar} alt={review.name} width={70} height={70}/>
-            <p className="text-blue-950 font-bold">{review.name}</p>
+            <Image className="border-4 border-orange-500 rounded-full" src={review.avatar} alt={review.name} width={70} height={70}/>
+            <p className="text-blue-600 font-bold">{review.name}</p>
             </div>
           </div>
         ))}
