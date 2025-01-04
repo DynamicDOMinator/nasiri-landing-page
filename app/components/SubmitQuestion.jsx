@@ -33,11 +33,11 @@ export default function SubmitQuestion() {
 
   return (
     <form
-     
+     dir="rtl"
       onSubmit={handleSubmit}
       className="max-w-md mx-auto p-6 space-y-4 bg-white rounded-lg"
     >
-      <h2 className="pb-4 text-right text-lg font-semibold">!...استشارة محامي مجانا</h2>
+      <h2 className="pb-4 text-center text-lg md:text-2xl font-semibold">استشارة محامي مجانا</h2>
       <div className="relative">
         <label className="absolute -top-3 right-3 px-1 bg-white text-sm text-gray-600">
           الاسم
@@ -57,6 +57,7 @@ export default function SubmitQuestion() {
           رقم الجوال
         </label>
         <input
+        dir="rtl"
           type="tel"
           name="phone"
           value={formData.phone}
