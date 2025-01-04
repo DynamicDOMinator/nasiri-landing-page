@@ -20,10 +20,10 @@ export default function SecondSection() {
             <p className="text-center md:text-3xl text-xl text-orange-600 font-bold">
               1
             </p>
-            <p className="mx-auto  pb-1 w-fit font-semibold text-2xl pt-3">
+            <p className="mx-auto mt-3  w-fit font-semibold text-2xl pt-3">
               ادخل طلبك
             </p>
-            <div className="w-8 h-[2px] mt-11 bg-orange-500 mx-auto"></div>
+            <div className="w-8 h-[2px] mt-9 bg-orange-500 mx-auto"></div>
             <p className="text-center  text-gray-800 pt-4">
               هدفنا في نصيري هو ان نسهل عليك عملية البحث علي مزودي الخدمات اجب
               علي بعض الاسئلة وقم بإدخال معلومات الاتصال بك نصيري يضمن الحفاظ
